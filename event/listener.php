@@ -52,7 +52,7 @@ class listener implements EventSubscriberInterface
 			$event['post_row'] = array_merge($event['post_row'], array(
 				'POSTER_IP_VISIBLE' => true,
 				'POSTER_IP'			=> $poster_ip,
-				'POSTER_IP_WHOIS'	=> "http://en.utrace.de/?query=" . $poster_ip,
+				'POSTER_IP_WHOIS'	=> "https://whatismyipaddress.com/ip/" . $poster_ip,
 			));
 		}
 	}
