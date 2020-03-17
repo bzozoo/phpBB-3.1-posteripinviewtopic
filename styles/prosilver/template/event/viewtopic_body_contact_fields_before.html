@@ -1,3 +1,5 @@
 <!-- IF postrow.POSTER_IP_VISIBLE -->
-	<dd class="profile-posts"><strong>{L_IP}{L_COLON}</strong> <a href="{postrow.POSTER_IP_WHOIS}" class="posterip" onclick="popup(this.href, 900, 750);return false;">{postrow.POSTER_IP}</a></dd>
+<!-- IF postrow.RANK_TITLE neq "Adminisztrátor" -->
+	<dd class="profile-posts"><strong>{L_IP}{L_COLON}</strong> <a href="{postrow.POSTER_IP_WHOIS}" target="_blank">{postrow.POSTER_IP}</a></dd>
+<!-- ENDIF -->
 <!-- ENDIF -->
